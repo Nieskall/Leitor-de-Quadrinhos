@@ -1,23 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Open+Sans:ital@0;1&family=Source+Sans+Pro:wght@300&display=swap');
 
 * {
-    background-image: url(assets/img/background.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: black;
-    font-size: large;
+    font-family: arial,sans-serif;
+    text-decoration: none;
 }
 
-h1 {
-    color: rgb(174, 172, 172);
-    font-size: x-large;
+.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    font-size: larger;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: background .4s;
+}
+
+.menu li a:hover {
+    background-color: red;
+}
+
+.thor h1 {
+    color: rgb(201, 201, 201);
     text-align: center;
 }
 
 .thor {
-    max-width:fit-content;
-    max-height: fit-content;
-    width: auto;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
+   max-width: fit-content;
+   max-height: fit-content;
+   width: auto;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto 
 }
+
+
+.categorias {
+    list-style: none;
+    padding: 0;
+    background-color: black;
+    font-size: larger;
+    text-align: center;
+}
+
+.categorias h3 {
+    color: rgb(201, 201, 201);
+
+}
+
+.categorias li {
+    display: inline;
+}
+
+.categorias li a {
+    padding: 20px;
+    display: inline-block;
+    color: rgb(201, 201, 201);
+    transition: background .4s;
+}
+
+.categorias li a:hover {
+    background-color: red;
+}
+
+.relacionados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 2vw;
+    object-fit: cover;
+    list-style: none;
+}
+
+.relacionados {
+    color: rgb(201, 201, 201);
+}
+
+.relacionados .relacionados-itens h3 {
+    font-size: larger;
+    text-align: center;  
+    color: rgb(201, 201, 201); 
+}
+
+
+
+
+
